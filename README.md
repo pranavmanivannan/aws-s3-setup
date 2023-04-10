@@ -47,7 +47,6 @@ In the [IAM](https://console.aws.amazon.com/iam) tab:
 _Then_
 1.  Click on your newly created user.
 1.  Click on the security credentials tab.
-1.  Click the small red `x` to the right of your existing access key to delete it.
 1.  Click `Create access key`
 1.  When complete, click `Download .csv file` and save the CSV to this repository. (This is
 the only time you'll be able to see your access key, but you can generate a new one anytime
@@ -153,9 +152,11 @@ of configuration options here: [AWS S3 Configuration Options](https://docs.aws.a
     1.  Open Terminal.
     1.  Copy paste the following code, line by line while replacing the keys and regions
         with ones that are in the .txt file.
-    1.  ```export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+    1.  ```
+           export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
            export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-           export AWS_DEFAULT_REGION=us-west-2```
+           export AWS_DEFAULT_REGION=us-west-2
+           ```
     1.  Once done, you can close Terminal.
 
 1. On Windows:
@@ -163,9 +164,11 @@ of configuration options here: [AWS S3 Configuration Options](https://docs.aws.a
     1.  I recommend setting up the variables directly as Environment Variables.
     1.  Another option is to copy paste the following code into Command Prompt, line by line 
         while replacing the keys and regions with the ones in the .txt file.
-    1.  ```setx AWS_ACCESS_KEY_ID AKIAIOSFODNN7EXAMPLE
+    1.  ```
+           setx AWS_ACCESS_KEY_ID AKIAIOSFODNN7EXAMPLE
            setx AWS_SECRET_ACCESS_KEY wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-           setx AWS_DEFAULT_REGION us-west-2```
+           setx AWS_DEFAULT_REGION us-west-2
+           ```
     1.  Once done, you can close Command Prompt.
 
 ### VSCode Setup
